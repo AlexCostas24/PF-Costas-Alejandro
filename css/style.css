@@ -83,7 +83,6 @@ text-align: center;
 .grid-container {
   grid-template-areas: string;
 }
-
 .enlaces-icono {
   display: inline-block;
   text-align: center;
@@ -93,7 +92,7 @@ text-align: center;
   background-color: #fff6f0; 
 }
 .container {
-  margin-left: 8%;
+
 }
 /* Estilos de formulario */
 input[type="text"],
