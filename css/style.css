@@ -80,13 +80,6 @@ button:hover {
 .container-redes{
 text-align: center;
 
-
-}
-.grid-container {
-  grid-template-areas: string;
-
-}
-
 .enlaces-icono {
   display: inline-block;
   text-align: center;
@@ -137,4 +130,4 @@ textarea {
 
   /*Reglas de estados (comportamiento del layout) */
 
-  /* Fuente predeterminada */
+
