@@ -22,15 +22,21 @@ body {
 
 h1{
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   font-style: italic;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -39,13 +45,6 @@ h2 {
 
 }
 
-/* button
-
-A:visited {color: black;  font-family: arial; text-decoration: none }
-A:hover { color: #27ee3e; font-family: arial; text-decoration: none }
-*{outline:none !important;}*:focus {outline: none !important;}textarea:focus, input:focus{outline: none !important;}	a{text-decoration: none !important;outline: none !important;}
-
-*/ 
 
 /* Estilos de enlaces */
 a {
@@ -75,16 +74,23 @@ button:hover {
   background-color: #27ee3e;
 }
 
-.card{
-justify-content: center;
+.card-container{
+  flex: auto;
+}
+.container-redes{
+text-align: center;
+
+
+}
+.grid-container {
+  grid-template-areas: string;
+
 }
 
-.card-body {
+.enlaces-icono {
+  display: inline-block;
+  text-align: center;
   align-items: center;
-}
-.card-container{
-  margin: 30px;
-  width: auto;
 }
 .container-fluid {
   background-color: #fff6f0; 
@@ -104,14 +110,22 @@ textarea {
 }
 
 /* Estilos de imagen */
-img {
-  max-width: 100%;
-  height: auto;
+
+.imagenes {
+
+  display: flex;
+  padding: 0.5rem;
+  width: 37rem; 
+  height: 37rem;
+  border-radius: 3%;
+  object-fit: cover; /* Ajusta la imagen dentro de la forma circular */
+  margin: 0 auto;
 }
+
 .avatar {
   display: flex; /* Asegura que la imagen sea un elemento de bloque */
-  width: 15rem; /* Ajusta el ancho de la imagen según sea necesario */
-  height:15rem; /* Ajusta la altura de la imagen según sea necesario */
+  width: 18rem; /* Ajusta el ancho de la imagen según sea necesario */
+  height:18rem; /* Ajusta la altura de la imagen según sea necesario */
   border-radius: 50%; /* Hace que la imagen tenga forma circular */
   object-fit: cover; /* Ajusta la imagen dentro de la forma circular */
   margin: 0 auto; /* Centra la imagen horizontalmente */
