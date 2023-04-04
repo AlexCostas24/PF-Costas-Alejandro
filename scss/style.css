@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/* reset*/
-* {
-  font-family: "Poppins", sans-serif;
-}
-
-/* html*/
-/* body*/
 body {
   background-color: #FFF6F0;
   font-size: 16px;
@@ -127,4 +120,41 @@ textarea {
   -o-object-fit: cover;
      object-fit: cover; /* Ajusta la imagen dentro de la forma circular */
   margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.grid .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.grid .card img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.grid .card a {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.grid .card:hover img {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
